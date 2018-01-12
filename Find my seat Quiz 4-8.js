@@ -1,0 +1,23 @@
+/*
+ * Programming Quiz: Find my Seat (4-8)
+ * 
+ * Write a nested for loop to print out all of the different seat combinations in the theater.
+ * The first row-seat combination should be 0-0 
+ * The last row-seat combination will be 25-99
+ * 
+ * Things to note: 
+ *  - the row and seat numbers start at 0, not 1
+ *  - the highest seat number is 99, not 100
+ */
+
+// Write your code here
+
+for(var x=0;x<26;x=x+1){
+    for(var y =0; y<100; y=y+1){
+    console.log(x+'-'+y);
+}
+}
+
+
+// first condition is 0, from there the loop goes into the nested for loop and completes the execution
+//which loops back into the main, increments, satifies the condition and loops back into the inner loop.
