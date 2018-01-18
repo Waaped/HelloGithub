@@ -1,18 +1,27 @@
  
- //Quiz for Udacity, second time using loops!, but the first time i did it mostly alone!
+ //*
+ * Programming Quiz: Laugh it Off 2 (5-2)
+ *
+ * Write a function called `laugh` with a parameter named `num` that represents the number of "ha"s to return.
+ *
+ * Note:
+ *  - make sure your the final character is an exclamation mark ("!")
+ *  - make sure that your function produces the correct results when it is called multiple times
+ */
  
+ //Notice how it prints 3 (ha)s, but has a conditional that termentates at <3 and not <=3;
+ //This is because we start at 0(i=0), it will increment 0(Ha)+1(Ha)+2(Ha!)<3, this one caugt me a little off
+ //gaurd, but this is definatley something i will redo.
  
- 
- 
- function laugh(num){
+function laugh(num){
     var ha="";
-    for (var i = 0;i<=num; i++){ //the real magic happens here, so long as this is true, this will continue to execute below
-    ha = ha + "ha!";  //This pretty much a console.log executing and following directions not, having any effect on input or the loop
+    for (var i = 0;i<num; i++){ //the real magic happens here, so long as this is true, this will continue to execute below
+    ha = ha + "ha";  //This pretty much a console.log executing and following directions not, having any effect on input or the loop
  }
-    return ha; //this bring it back to num
+    return ha+"!"; //this adds the exclamation point, and processes the fina ha,
  }
  
-console.log(laugh(25));  //calling the function, and specifing the arguement/number.
+console.log(laugh(3)); 
 
 //THE FOR LOOP BELOW HAS the same output, however the power of the function comes where you only have to change the input
 // i would imagine as a codebase gets larger and longer 
