@@ -27,3 +27,8 @@ var totals = bills.map(function(bills) {
 });
 
 console.log(totals);
+
+//Problem i had here was realizing that (toFixed) converted the number into a string
+//i tried several methods initially intParse, and even the recommended number
+//but i realized i didnt capitalize the 'N' in number, as these javascript functions
+// are case sensitive
