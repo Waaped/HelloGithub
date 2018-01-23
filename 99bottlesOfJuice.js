@@ -32,3 +32,4 @@ while ( num>=1/* your stop condition goes here */) {
 //Ended up making an infinite loop when i first implemented "else if" after realizing i needed to add another condition
 //By leaving the decrement of num within the first else  statement, it executed and crashed the compiler udemy--sort of
 //A friend crashed a server accidently using the infinite loop, be carefull with the braket!
+//This is now farely easy! :), 1-22-18
