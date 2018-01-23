@@ -15,3 +15,6 @@ test.forEach(function(num, index, array){
 });
 
 console.log(test);
+
+//All three parameters are labled for their action, but naming doesnt matter, it can x and y
+//however it is best practice to name the parameters to relative function/action
